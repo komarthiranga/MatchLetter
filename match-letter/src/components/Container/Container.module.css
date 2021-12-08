@@ -1,0 +1,53 @@
+.container {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.container__row {
+    display: flex;
+    flex-direction: row;
+}
+
+.container__row_Item {
+    width: 20vw;
+    height: 50px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    background: #000000;
+    border: 1px solid #e9e9e9;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.container__row_Item p {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+    .container__row_Item {
+        width: 40vw;
+    }
+}
+.clickChange{
+    background-color: rgb(0, 187, 62);
+    animation-name: clickItem;
+    animation-duration: 1s;
+}
+
+@keyframes clickItem {
+    from {background-color: #000000;}
+    to {background-color: rgb(0, 187, 62);}
+  }
+
+  .container p {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #e507b4;
+  }
